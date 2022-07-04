@@ -1,0 +1,12 @@
+{
+  "name": "D3_Treemap_attempt",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/desaimithun2004/D3_Treemap_attempt.git",
+  "author": "desaimithun2004 <desaimithun2004@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "jquery": "^3.6.0"
+  }
+}
