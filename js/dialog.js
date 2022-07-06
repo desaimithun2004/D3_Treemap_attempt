@@ -86,7 +86,7 @@
 
       create_MeasureDropdown(measureColumns);
       create_DimensionDropdown(dimensionColumns);
-      // create_Color_Dropdown();
+      create_Color_Dropdown();
 
       // Try to restore the drop down if a value exists within the settings.
       RestoreExtSettings(dimensionColumns, PriorMeasureSelected);
@@ -286,16 +286,17 @@
     }
   }
 
-  // function create_Color_Dropdown(){
-  // var arrColorScale =['Brown_BrightGreen', 'Purple_Green', 'Pink_YellowGreen', 'Purple_Orange', 'Red_Blue', 'Red_Grey', 'Red_Yellow_LightBlue', 'Red_Yellow_LightGreen', 'Spectral', 'Blues', 'Greens', 'Greys', 'Oranges', 'Purples', 'Reds', 'Viridis', 'Inferno', 'Magma', 'Plasma', 'Warm', 'Cool', 'Cube_Helix', 'Blue_Green', 'Blue_Purple', 'Green_Blue', 'Orange_Red', 'Purple_Blue_Green', 'Purple_Blue', 'Purple_Red', 'Red_Purple', 'Yellow_Green_Blue', 'Yellow_Green', 'Yellow_Orange_Brown', 'Yellow_Orange_Red', 'Rainbow', 'Sinebow', 'schemeSet3'];
+  function create_Color_Dropdown(){
+  var arrColorScale =['Brown_BrightGreen', 'Purple_Green', 'Pink_YellowGreen', 'Purple_Orange', 'Red_Blue', 'Red_Grey', 'Red_Yellow_LightBlue', 'Red_Yellow_LightGreen', 'Spectral', 'Blues', 'Greens', 'Greys', 'Oranges', 'Purples', 'Reds', 'Viridis', 'Inferno', 'Magma', 'Plasma', 'Warm', 'Cool', 'Cube_Helix', 'Blue_Green', 'Blue_Purple', 'Green_Blue', 'Orange_Red', 'Purple_Blue_Green', 'Purple_Blue', 'Purple_Red', 'Red_Purple', 'Yellow_Green_Blue', 'Yellow_Green', 'Yellow_Orange_Brown', 'Yellow_Orange_Red', 'Rainbow', 'Sinebow', 'schemeSet3'];
 
-  // arrColorScale.forEach(function(currentValue){
-  //   $('#selectColor').append("<option value='" + currentValue + "'>" + currentValue + "</option>");
-  // });
+  arrColorScale.forEach(function(currentValue){
+    $('#selectColor').append("<option value='" + currentValue + "'>" + currentValue + "</option>");
+  });
 
-  // $('#selectColor').val('schemeSet3'); // Set default color
-  // }
+  $('#selectColor').val('schemeSet3'); // Set default color
+  }
 
+  
   function clear_Prior_Measure_Dropdown(){
   var RowID = 'MeasureRowID_0';
   var SecondDivID = 'MeasureSecondDivID_0';

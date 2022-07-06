@@ -125,7 +125,9 @@
       }
       else{
          var arrStepColors = steppedColorArray(colorChromaticScale, uniqueElementCount);
-         color = d3.scaleOrdinal(arrStepColors);
+         // color = d3.scaleOrdinal(arrStepColors);
+         color = d3.scaleOrdinal()
+         .range(d3.schemeSet3.map(function(c) { c = d3.rgb(c); c.opacity = 0.6; return c; }));
          console.log('Debug running else step', colorChromaticScale);
       }
       
